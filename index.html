@@ -17,10 +17,10 @@
 <body>
     <div class="container-md text-center rounded-4 position-absolute top-50 start-50 translate-middle">
         <h1 class="card-title py-3">Form Validation</h1>
-          <form action="/" method="get" id="form">
+          <form action="http://127.0.0.1:5500/Form/index.html" method="GET" id="form">
          <!--for username-->
             <div class="input-group mb-4 mt-4">
-                <span class="input-group-text">First and Last name</span>
+                <span class="input-group-text">First and Last name: </span>
                 <input type="text" aria-label="First name" class="form-control" id="fname" required>
                 <input type="text" aria-label="Last name" class="form-control" id="lname" required>
             </div>
@@ -28,43 +28,39 @@
 
         <div class="form-floating mb-4"> <!--Email-->
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <label for="floatingInput">Email address: </label>
           </div>
 
           <div class="form-floating mb-4"> <!--Address-->
-            <textarea class="form-control" placeholder="Address" id="floatingTextarea2" style="height:80px;"></textarea>
-            <label for="floatingTextarea2">Address</label>
+            <textarea class="form-control" placeholder="Address" id="floatingTextarea2" style="height:60px;"></textarea>
+            <label for="floatingTextarea2">Address: </label>
           </div>
+
         <div class="input-group mb-4">  <!--Phone Number-->
-            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Country Code</button>
+            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Country Code</button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">+91</a></li>
-              <li><a class="dropdown-item" href="#">+1</a></li>
-              <li><a class="dropdown-item" href="#">+44</a></li>
-              <li><a class="dropdown-item" href="#" aria-readonly="true">Please Enter manually if any other</a></li>
+              <li><button class="dropdown-item" type="button" data-code="+91">+91</button></li>
+              <li><button class="dropdown-item" type="button" data-code="+33">+33</button></li>
+              <li><button class="dropdown-item" type="button" data-code="+44">+44</button></li>
+              <li class="ps-3 pe-3">Please Enter manually if any other</li>
             </ul>
             <input type="text" class="form-control" id="phone" placeholder="Phone Number" aria-label="Text input with dropdown button">
           </div>
          
           <div class="form-floating">  <!--Password-->
             <input type="password" class="form-control mb-4 col-11" id="floatingPassword" placeholder="Password" required>
-            <label for="floatingPassword">Password<button type="button"><i class="fa-regular fa-eye"></i></button>
-              <button type="button"><i class="fa-regular fa-eye-slash"></i></button>
-            </label>
+            <label for="floatingPassword" >Password: </label>
           </div>
 
           <div class="form-floating">  <!--Confirm Password-->
-            <input type="password" class="form-control" id="confirmPassword" placeholder="Password" required>
-            <label for="confirmPassword">Confirm Password
-              <button type="button"><i class="fa-regular fa-eye"></i></button>
-              <button type="button"><i class="fa-regular fa-eye-slash"></i></button>
-            </label>
+            <input type="password" class="form-control grid" id="confirmPassword" placeholder="Password" required>
+            <label for="confirmPassword">Confirm Password:</label>
           </div>
 
-          <button type="button" class="btn btn-primary mt-3" id="submit">Submit</button>
+          <button type="submit" class="btn btn-primary mt-3" id="submit">Submit</button>
          
         </form>
-            <div class="footer mt-3 pb-3">  
+            <div class="footer mt-3 pb-3 d-flex justify-content-center ">  
             <i class="fa-brands fa-github me-3" style="font-size: 35px;"></i>
             <a href="https://github.com/Shadan-Jamal" target="_blank" style="text-decoration: none;">
             Shadan Jamal</a>
