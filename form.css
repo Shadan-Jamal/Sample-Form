@@ -27,7 +27,7 @@ body{
 	}
 }
 .container-md{
-	width: 60% !important;
+	width: 40%;
 	background: transparent !important;
 	box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.6);
 }
@@ -57,4 +57,16 @@ body{
     0 0 92px #0fa,
     0 0 102px #0fa,
     0 0 151px #0fa;
+}
+
+.icons{
+	margin-left: 370px;
+}
+
+@media screen and (max-width:590px){
+	.container-md{
+		width: 80%;
+		height: 90vh;
+	}
+
 }
