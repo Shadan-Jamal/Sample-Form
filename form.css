@@ -86,9 +86,22 @@ h1{
 }
 
 @media screen and (max-width:590px){
+    h1{
+        font-size: 25px;
+    }
 	.container-fluid{
-		width: 80%;
-		height: 90vh;
+		width: 90%;
+		height: 80vh;
 	}
+
+    .form-floating,
+    .input-group {
+        height: 60%;
+        margin: 7px 5px !important;
+    }
+    .dropdown-toggle{
+        font-size: 12px !important;
+    }
+
 
 }
