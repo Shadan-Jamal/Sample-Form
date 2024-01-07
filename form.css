@@ -10,11 +10,11 @@
 body{
     background: linear-gradient(60deg,
 	red,
-	#FF00FF,
+	#800000,
 	#4B0082,
 	#48D1CC);
     background-size: 400% 400%;
-    animation: gradient 20s infinite;
+    animation: gradient 10s infinite;
     height: 100vh;
 }
 
